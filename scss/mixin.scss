@@ -1,0 +1,42 @@
+@charset "utf-8";
+// 混合器
+@mixin box-sizing{
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; /* Firefox */
+	-webkit-box-sizing:border-box; /* Safari */
+}
+@mixin flex-box{
+	display:flex;
+	// Chrome,Safari,and Opera
+	display:-webkit-box;
+	-webkit-box-pack:justify;
+	-webkit-box-align:center;
+	// Firefox
+	display:-moz-box;
+	-moz-box-pack:justify;
+	-moz-box-align:center;
+	// IE 10
+	display:-ms-flexbox;
+	-ms-flex-pack:justify;
+	-ms-flex-align:center;
+
+	justify-content:space-between;
+	align-content:center;
+}
+@mixin flex-item{
+	-webkit-box-flex:1;
+	-moz-box-flex:1;
+	-webkit-flex:1;
+	-ms-flex:1;
+	flex:1;
+}
+@mixin icon-nav($bg){
+	width: 1.146rem;
+	height: 1.146rem;
+	display: block;
+	margin: 0 auto;
+	background-image:$bg;
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-position:50% 50%;
+}

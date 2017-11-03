@@ -1,0 +1,151 @@
+@charset "utf-8";
+.header {
+	width:100%;
+	height:44px;
+	position:fixed;
+	left:0;
+	top:0;
+	right:0;
+	font-size:0;
+	@include box-sizing;
+	.header-address {
+		position:absolute;
+		display: inline-block;
+		width: 42px;
+		text-align: center;
+		left: 0;
+		top: 15px;
+		font-size: 14px;
+		color: #fff;
+	}
+}
+.header-searchBox {
+	padding: 3px 33px 3px 42px;
+	line-height:38px;
+	.header-search {
+		width: 100%;
+		height: 26px;
+		line-height: 26px;
+		padding:3px 12px;
+		background: #fff;
+		font-size: 14px;
+		color: #999;
+		border-radius: 20px;
+		border:1px solid transparent;
+		outline: 0;
+	}
+	&:focus{
+		border:1px solid transparent;
+	}
+}
+.header-bg {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    background: -webkit-linear-gradient(black,transparent);
+    background: -o-linear-gradient(black,transparent);
+    background: -moz-linear-gradient(black,transparent);
+    background: linear-gradient(#000,rgba(0,0,0,0))
+}
+// 控制容器
+.view{
+	background:#f2f2f2;
+	width:100%;
+	padding:46px 0;
+}
+.scroll-wrap{
+	width:10rem;
+	margin:0 auto;
+}
+.banner{
+	width:100%;
+	height:100%;
+	.img{
+		display: block;
+		width: 100%;
+	}
+}
+// footer 
+.footer-wrap{
+	width:100%;
+	display:block;
+	position:fixed;
+	left:0;
+	bottom:0;
+}
+.footer{
+	width:100%;
+	height:44px;
+	background:#fff;
+	border-top:1px solid #f2f2f2;
+	border-bottom:1px solid #f2f2f2;
+	@include flex-box;
+	.item{
+		display: block;
+		color: #4c4c4c;
+		font-size: 12px;
+		text-decoration: none;
+		text-align: center;
+		@include flex-item;
+		span{
+			font-size: 22px;
+		}
+		p{
+			padding-top: 3px;
+		}
+	}
+
+}
+// nav
+.nav{
+	width:100%;
+	display:block;
+	font-size:0;
+	background:#fff;
+}
+.nav-list{
+	width:10rem;
+	@include box-sizing;
+	.nav-item{
+		width: 2rem;
+		height: 2.4rem;
+		display: inline-block;
+		padding:0.3rem 0;
+		@include box-sizing;
+	}
+	.nav-link{
+		display: block;
+		font-size: 0.3733rem;
+		color: #666;
+		text-align: center;
+		font-family: "pingfang sc regular";
+		.icohome-go{
+			@include icon-nav(url(../images/home-go.png));
+		}
+		.icohome-support{
+			@include icon-nav(url(../images/home-support.png));
+		}
+		.icohome-return{
+			@include icon-nav(url(../images/home-return.png));
+		}
+		.icohome-seckill{
+			@include icon-nav(url(../images/home-seckill.png));
+		}
+		.icohome-replen{
+			@include icon-nav(url(../images/home-replen.png));
+		}
+		
+		.nav-title{
+			margin-top: 0.16rem;
+			display: block;
+		}
+	}
+}
+// content
+.unit-wrap{
+	width:10rem;
+	margin-top:0.2666rem;
+}

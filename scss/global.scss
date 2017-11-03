@@ -1,0 +1,14 @@
+@charset "utf-8";
+// 引用scss
+// ## 重置库
+@import "normalize.scss";
+// 图标
+@import "icon.scss";
+// ## 混合
+@import "mixin.scss";
+// ## 常用样式
+@import "common.scss";
+// ## 组件模块
+@import "module.scss";
+// ## 易生活
+@import "ysh.scss";
